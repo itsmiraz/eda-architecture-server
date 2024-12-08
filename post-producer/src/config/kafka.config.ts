@@ -6,7 +6,7 @@ class KafkaConfig {
   private admin: Admin;
   private broker: string;
   constructor() {
-    this.broker = process.env.KAFKA_BROKERS || "192.168.43.221:9092";
+    this.broker = process.env.KAFKA_BROKERS || "192.168.116.221:9092";
     this.kafka = new Kafka({
       clientId: "post-producer",
       brokers: [this.broker],
