@@ -9,6 +9,7 @@ app.get("/", (c) => {
   return c.text("Hello Hono Post Revicever!");
 });
 app.route("/", getPostRoute);
+
 export default {
   port: 3002,
   fetch: app.fetch,
